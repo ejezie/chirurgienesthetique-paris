@@ -1,0 +1,576 @@
+---
+layout: default
+permalink: /
+title: Des chirurgies et des soins à la pointe des avancées de la médecine 👨🏻‍⚕️
+description: Située au coeur de Paris, Chirurgien esthétique Paris vous propose des traitements et des chirurgies esthétiques innovantes dans un cadre d’exception.
+---
+
+<!-- Featured Page-->
+<section class="featured">
+  <div class="container">
+    <div class="row featured_row">
+      <div class="col-lg-10">
+        <div class="find_property">
+          <!-- Main Box-->
+          <div class="find_property_content">
+            <!--Inside Content-->
+            <div class="find_property-head">
+              <div class="find_property-head-title">
+                <span class="find_property-head-title-span">Faites appel à un professionnel</span>
+                <h2 class="find_property-head-title-text">
+                  Prenez rendez-vous maintenant !
+                </h2>
+              </div>
+            </div>
+            <div class="find_property-sub">
+              <form class="form" id="devisForm" method="post" action="{{site.data.company.url.notify}}">
+                <input type="hidden" name="lang" value="{{ site.data.company.lang }}">
+                <input type="hidden" name="type" value="devis">
+                <input type="hidden" name="firstName" value="" />
+                <input type="hidden" name="website" value="{{ site.data.company.website }}">
+                <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}">
+                <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                <input type="hidden" name="website" value="{{site.data.company.website}}" />
+
+                <div class="find_property-form-line1">
+                  <input type="text" class="form-control dropdown-md" id="name" name="name" placeholder="Nom" />
+                  <input type="text" class="form-control dropdown-md" id="lastname" name="lastname"
+                    placeholder="Nom de famille" />
+                  <input type="email" class="form-control dropdown-md" id="email" name="email" placeholder="E-mail" />
+                  <input type="text" class="form-control dropdown-md" id="phone" name="phone"
+                    placeholder="Téléphone" />
+                </div>
+                <div class="find_property-form-line2">
+                  <input type="text" class="form-control dropdown-md" id="address" name="address"
+                    placeholder="Adresse" />
+                  <input type="text" class="form-control dropdown-md" id="zip" name="zip" placeholder="Code postal" />
+                  <div class="dropdown">
+                    <select class="dropdown-md btn btn-outline-secondary" aria-labelledby="dropdownMenuButton">
+                      <option value="" disabled selected>Ville</option>
+                      <option>New york</option>
+                      <option>Los angeles</option>
+                      <option>Chicago</option>
+                      <option>Mumbai</option>
+                      <option>Delhi</option>
+                    </select>
+                  </div>
+                  <div class="dropdown">
+                    <select class="dropdown-md btn btn-outline-secondary" aria-labelledby="dropdownMenuButton"
+                      aria-placeholder="State">
+                      <option value="" disabled selected>État</option>
+                      <option>New york</option>
+                      <option>Calafornia</option>
+                      <option>Chicago</option>
+                      <option>Mumbai</option>
+                      <option>Delhi</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="find_property-form-line2">
+                  <input type="date" class="form-control dropdown-lg inputdate" id="date" name="date"
+                    placeholder="Date" />
+                  <input type="time" class="form-control dropdown-lg inputtime" id="time" name="time"
+                    placeholder="temps" />
+                  <br />
+                  <div id="devis-form-response" style="color: rgb(44, 42, 42); margin-bottom: 1rem"></div>
+                  <br />
+                  <button type="submit" class="find_property-form-btn form-submit" style="margin: 0 1rem 0 0.1rem;">
+                    Envoyer
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="container featured_right">
+          <div class="featured_right-content">
+            <h4 class="featured_right-content--head">Horaires d'ouvertures</h4>
+            <ul class="featured_right-content--ul">
+              <li class="featured_right-content--li">
+                <i class="fas fa-clock mr-3"></i> Lun - Mar
+                <span class="featured_right-content--span">08:30 - 18:30</span>
+              </li>
+              <li class="featured_right-content--li">
+                <i class="fas fa-clock mr-3"></i> Mer - Jeu
+                <span class="featured_right-content--span">09:30 - 19:30</span>
+              </li>
+              <li class="featured_right-content--li">
+                <i class="fas fa-clock mr-3"></i> Ven - Sam
+                <span class="featured_right-content--span">08:30 - 18:30</span>
+              </li>
+              <li class="featured_right-content--li">
+                <i class="fas fa-clock mr-3"></i> Dimanche
+                <span class="featured_right-content--span">09:30 - 15:30</span>
+              </li>
+              <li class="featured_right-content--li">
+                Urgence24
+                <span class="featured_right-content--span">24 heures</span>
+              </li>
+              <li class="featured_right-content--phone">
+                {{site.data.company.phone}}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="about_left">
+          <div class="about_left-content">
+            <h2 class="about_left-content--head">
+              Qu’est-ce que la chirurgie esthétique ?
+            </h2>
+            <p class="about_left-content--p mt-4">
+              La chirurgie esthétique comprend toutes les pratiques chirurgicales visant à améliorer l’apparence du
+              visage et du corps. Elle permet d’atténuer les imperfections sur le corps et le visage, amincir la
+              silhouette, gommer les signes de l'âge, corriger un défaut plus ou moins important du visage ou du
+              corps.<br>
+              Cette intervention à la fois esthétique et médicale est un choix individuel, mais pas nécessairement
+              obligatoire. Les hommes et les femmes qui veulent se faire opérer ont pour but de se sentir bien dans leur
+              peau et d'apprécier leur corps. La chirurgie esthétique peut comprendre une ou plusieurs interventions ou
+              opérations, mais le résultat reste durable contrairement à d'autres traitements esthétiques.
+            </p>
+            <h2 class="about_left-content--title mb-0 mt-5">
+              Les points forts de notre clinique
+            </h2>
+            <p class="about_left-content--p mt-2">
+              Chirurgien esthétique Paris vous assure :
+            </p>
+            <ul class="about_left_item">
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">Des conseils honnêtes et des résultats satisfaisants</span>
+              </li>
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">
+                  Des services et des soins personnalisés
+                </span>
+              </li>
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">
+                  Un service d'hospitalité haut de gamme
+                </span>
+              </li>
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">
+                  Des repas réalisés par des traiteurs
+                </span>
+              </li>
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">5 Chambres d’hospitalisations agréables et confortables</span>
+              </li>
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">
+                  Une équipe d'infirmier dévouée à votre disposition tout au long de votre séjour
+                </span>
+              </li>
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">Un suivi médical de qualité</span>
+              </li>
+              <li class="about_left_item-li in-left d-flex">
+                <i class="fas fa-plus-square about_left_item-icon"></i>
+                <span class="about_left-content--p">Une amélioration continue de nos services afin de mieux répondre à
+                  vos attentes.</span>
+              </li>
+            </ul>
+            <div class="about_left-bottom">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="about_left-bottom--info">
+                      <p class="about_left-bottom--name">Eric DUCHEMIN</p>
+                      <p class="about_left-bottom--designation">
+                        Chirurgien esthétique
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="about_left-bottom-image">
+                      <img src="{{site.baseurl}}/assets/img/about/sign.png" class="about_left-bottom-img"
+                        alt="Medic Signature" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5">
+        <div class="about_right">
+          <img src="{{site.baseurl}}/assets/img/about/1.jpg" class="about_right-img" alt="About Medic" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="teamHeader">
+  <div class="container">
+    <div class="teamHeader_content">
+      <h2 class="teamHeader_content-head">
+        Les interventions réalisées par Chirurgiens esthétiques Paris
+      </h2>
+    </div>
+  </div>
+</section>
+<section class="services" id="slide">
+  <div class="container">
+    <div class="single-item">
+      <div class="services_content boxshadow">
+        <div class="services_content-image">
+          <img src="{{site.baseurl}}/assets/img/tabs/visage.png" class="servicestabs_content-image--img"
+          alt="Company" />
+        </div>
+        <div class="services_content-info">
+          <h3 class="services_content-info--designation">
+            Chirurgies esthétiques pour le visage
+          </h3>
+        <details>
+          <summary>
+            <span class="chevronup" id="open"><i class="fas fa-chevron-down"></i></span> 
+            <span class="chevrondown" id="close"><i class="fas fa-chevron-up"></i></span> 
+          </summary>
+          <ul class="aboutservices_box-content--ul">
+            <li class="aboutservices_box-content--li">Lifting</li>
+            <li class="aboutservices_box-content--li">Liposuccion du double menton</li>
+            <li class="aboutservices_box-content--li">Rhinoplastie ou améliorer la forme du nez</li>
+            <li class="aboutservices_box-content--li">Génioplastie ou améliorer la forme du menton</li>
+            <li class="aboutservices_box-content--li">Otoplastie ou corriger les oreilles décollées</li>
+        </ul>
+        </div>
+      </div>
+      <div class="services_content boxshadow">
+        <div class="services_content-image">
+          <img src="{{site.baseurl}}/assets/img/tabs/capillaire.jpg" class="servicestabs_content-image--img"
+          alt="Company" />
+        </div>
+        <div class="services_content-info">
+          <h3 class="services_content-info--designation">
+            Chirurgie capillaire
+          </h3>
+          <details>
+            <summary>
+              <span class="chevronup" id="open"><i class="fas fa-chevron-down"></i></span> 
+              <span class="chevrondown" id="close"><i class="fas fa-chevron-up"></i></span> 
+            </summary>
+            <ul class="aboutservices_box-content--ul">
+              <li class="aboutservices_box-content--li">Greffe de barbe</li>
+              <li class="aboutservices_box-content--li">Greffe de Sourcils</li>
+              <li class="aboutservices_box-content--li">Soin capillaire – traitement pour perte de cheveux
+              </li>
+              <li class="aboutservices_box-content--li">Chirurgie capillaire- Greffe de cheveux ou implant
+                  de cheveux sans cicatrice</li>
+          </ul>
+        </details>
+        </div>
+      </div>
+      <div class="services_content boxshadow">
+        <div class="services_content-image">
+          <img src="{{site.baseurl}}/assets/img/tabs/corp.jpg" class="servicestabs_content-image--img"
+          alt="Company" />
+        </div>
+        <div class="services_content-info">
+          <h3 class="services_content-info--designation">
+            Chirurgies esthétiques pour le corps
+          </h3>
+        <details>
+          <summary>
+            <span class="chevronup" id="open"><i class="fas fa-chevron-down"></i></span> 
+            <span class="chevrondown" id="close"><i class="fas fa-chevron-up"></i></span> 
+          </summary>
+          <ul class="aboutservices_box-content--ul">
+            <li class="aboutservices_box-content--li"><b>Chirurgie mammaire: </b>Éliminer la graisse indésirable sur la poitrine, réduire la glande mammaire chez les hommes, améliorer la forme de la poitrine chez les femmes  (augmentation, réduction, lifting de mammaire) et débridage des mamelons</li>
+            <li class="aboutservices_box-content--li"><b>Chirurgie de ventre: </b>Utiliser différentes techniques comme la liposuccion pour éliminer la graisse et traiter la peau relâchée au niveau du ventre.</li>
+            <li class="aboutservices_box-content--li"><b>Chirurgie fessière: </b>Améliorer la forme du fessier en utilisant diverses solutions telles que la liposuccion des fesses pour éliminer la graisse, lipofilling ou implants fessiers pour augmenter le volume des fesses.</li>
+            <li class="aboutservices_box-content--li"><b>Chirurgie de cuisse: </b>Liposuccion des cuisses et le lifting des cuisses</li>
+            <li class="aboutservices_box-content--li"><b>Chirurgie intime: </b>Améliorer ou corriger les organes génitaux féminins et masculins</li>
+        </ul>
+      </details>
+        </div>
+      </div>
+      <div class="services_content boxshadow">
+        <div class="services_content-image">
+          <img src="{{site.baseurl}}/assets/img/tabs/medecine.jpg" class="servicestabs_content-image--img"
+          alt="Company" />
+        </div>
+        <div class="services_content-info">
+          <h3 class="services_content-info--designation">
+            Médecine esthétique
+          </h3>
+        <details>
+          <summary>
+            <span class="chevronup" id="open"><i class="fas fa-chevron-down"></i></span> 
+            <span class="chevrondown" id="close"><i class="fas fa-chevron-up"></i></span> 
+          </summary>
+          <ul class="aboutservices_box-content--ul">
+            <li class="aboutservices_box-content--li"><b>Injections de produits synthétiques ou naturels dans la peau
+                    : </b>Estomper les signes de vieillissement, redonner volumes, resculpter certaines parties
+                du corps, réduire les imperfections cutanées, rajeunir la peau, traitement capillaire, etc.
+            </li>
+            <li class="aboutservices_box-content--li"><b>Peeling : </b>Exfoliation naturelle de la peau pour éliminer
+                les imperfections
+            </li>
+            <li class="aboutservices_box-content--li"><b>Coolsculpting ou la cryolipolyse : </b>Éliminer par le froid
+                (environ -10 degrés) les graisses indésirables sur le visage ou certaines parties du corps
+            </li>
+            <li class="aboutservices_box-content--li"><b>Ondes électromagnétiques : </b>Muscler, rajeunir et mincir
+                certaines parties du corps.
+            </li>
+            <li class="aboutservices_box-content--li"><b>Photothérapie : </b>Traiter la peau et les cheveux grâce à la
+                lumière froide (LED) ou la lumière chaude (IPL).
+            </li>
+            <li class="aboutservices_box-content--li"><b>Fils tenseurs : </b>Réduire les rides, lisser la peau et
+                traiter le relâchement cutané.
+            </li>
+            <li class="aboutservices_box-content--li"><b>Détatouage : </b>Enlèvement de tatouage sur toutes parties du
+                corps avec du laser (environ 6 à 10 séances en moyenne).
+            </li>
+        </ul>
+      </details>
+        </div>
+      </div>
+      <div class="services_content boxshadow">
+        <div class="services_content-image">
+          <img src="{{site.baseurl}}/assets/img/tabs/dentaire.jpg" class="servicestabs_content-image--img"
+          alt="Company" />
+        </div>
+        <div class="services_content-info">
+          <h3 class="services_content-info--designation">
+            Chirurgie dentaire
+          </h3>
+          <details>
+            <summary>
+              <span class="chevronup" id="open"><i class="fas fa-chevron-down"></i></span> 
+              <span class="chevrondown" id="close"><i class="fas fa-chevron-up"></i></span> 
+            </summary>
+            <ul class="aboutservices_box-content--ul">
+              <li class="aboutservices_box-content--li"><b>Esthétique dentaire :</b> redressage des dents,
+                  blanchiment des dents, facettes dentaires.</li>
+              <li class="aboutservices_box-content--li"><b>Chirurgie dentaire : </b>Implant dentaire, greffe de
+                  gencive, etc.</li>
+            </ul>
+        </details>
+        </div>
+      </div>
+      <div class="services_content boxshadow">
+        <div class="services_content-image">
+          <img src="{{site.baseurl}}/assets/img/tabs/laser.jpg" class="servicestabs_content-image--img"
+          alt="Company" />
+        </div>
+        <div class="services_content-info">
+          <h3 class="services_content-info--designation">
+            Épilation laser
+          </h3>
+          <details>
+            <summary>
+              <span class="chevronup" id="open"><i class="fas fa-chevron-down"></i></span> 
+              <span class="chevrondown" id="close"><i class="fas fa-chevron-up"></i></span> 
+            </summary>
+            <ul class="aboutservices_box-content--ul">
+              <li class="aboutservices_box-content--li">
+                  Épilation laser du visage (pommettes, lèvre supérieure, barbe...)
+              </li>
+              <li class="aboutservices_box-content--li">
+                  Épilation laser de peau claire, mate et foncée
+              </li>
+              <li class="aboutservices_box-content--li">
+                  Épilation laser pour les hommes
+              </li>
+              <li class="aboutservices_box-content--li">
+                  Épilation laser partie intime
+              </li>
+          </ul>
+        </details>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="counter">
+  <div class="container">
+    <div class="counter_grid">
+      <div class="counter_content">
+        <div class="counter_content-icon">
+          <i class="fas fa-procedures"></i>
+        </div>
+        <div class="counter_content-info">
+          <span class="counter_content-info--no counter-count">1790</span>
+          <label class="counter_content-info--label">Patients opérés</label>
+        </div>
+      </div>
+      <div class="counter_content">
+        <div class="counter_content-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <div class="counter_content-info">
+          <span class="counter_content-info--no counter-count">245</span>
+          <label class="counter_content-info--label">Chirurgies réparatrices</label>
+        </div>
+      </div>
+      <div class="counter_content">
+        <div class="counter_content-icon">
+          <i class="fas fa-hospital-alt"></i>
+        </div>
+        <div class="counter_content-info">
+          <span class="counter_content-info--no counter-count">6</span>
+          <label class="counter_content-info--label">Chirurgiens et spécialistes</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="space">
+  <div class="">
+    <div class="row">
+      <div class="col-md-5">
+        <div class="space_image">
+          <img src="{{site.baseurl}}/assets/img/space/1.jpg" class="space_image-img" alt="Space" />
+        </div>
+      </div>
+      <div class="col-md-7">
+        <div class="space_content">
+          <h2 class="space_content-head">
+            Chirurgien esthétique paris propose des services à la pointe des avancées de la médecine.
+          </h2>
+          <p class="space_content-p mt-4">
+            Notre clinique couvre une superficie de 900 mètres carrés et propose des prestations haut de gamme telles
+            que la médecine esthétique, la greffe de cheveux, la chirurgie faciale et corporelle, les soins dentaires,
+            pour n'en citer que quelques-uns. Chirurgien esthétique paris possède tous les moyens techniques et humains
+            pour fournir une palette globale de médecine esthétique et de chirurgie esthétique. Tous nos soins et
+            services sont à la pointe des avancées de la médecine, et sont validés par le Conseil Médical. Notre équipe
+            professionnelle comprend des chirurgiens reconnus, de personnel de service client et de personnel
+            administratif qui sauront répondre à vos attentes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="team">
+  <div class="container">
+    <div class="team_header">
+      <span class="team_header-title">Une équipe composée de professionnels</span><br>
+      <h2 class="team_header-head">
+        Notre équipe exceptionnelle est prête à vous aider !
+      </h2>
+    </div>
+    <div class="row">
+      <div class="col-md-3 teamhover">
+        <div class="team_image">
+          <img src="{{site.baseurl}}/assets/img/team/1.jpg" class="team_image-img" alt="Chirurgien" />
+        </div>
+        <div class="team_content">
+          <div class="team_content-info">
+            <span class="team_content-info--title">Chirurgien</span>
+            <p class="team_content-info--name">Michel Blanchet</p>
+            <span class="team_content-info--phone">{{site.data.company.phone}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 teamhover">
+        <div class="team_image">
+          <img src="{{site.baseurl}}/assets/img/team/2.jpg" class="team_image-img" alt="Chirurgien" />
+        </div>
+        <div class="team_content">
+          <div class="team_content-info">
+            <span class="team_content-info--title">Chirurgien</span>
+            <p class="team_content-info--name">Dominique Rousseau</p>
+            <span class="team_content-info--phone">{{site.data.company.phone}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 teamhover">
+        <div class="team_image">
+          <img src="{{site.baseurl}}/assets/img/team/3.jpg" class="team_image-img" alt="Chirurgien" />
+        </div>
+        <div class="team_content">
+          <div class="team_content-info">
+            <span class="team_content-info--title">Chirurgien</span>
+            <p class="team_content-info--name">Patricia David</p>
+            <span class="team_content-info--phone">{{site.data.company.phone}}</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 teamhover">
+        <div class="team_image">
+          <img src="{{site.baseurl}}/assets/img/team/4.jpg" class="team_image-img" alt="Chirurgien" />
+        </div>
+        <div class="team_content">
+          <div class="team_content-info">
+            <span class="team_content-info--title">Chirurgien</span>
+            <p class="team_content-info--name">William Evrard</p>
+            <span class="team_content-info--phone">{{site.data.company.phone}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="company">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="company_left">
+        <div class="company_left-content">
+          <h2 class="company_left-content--head">
+            Vous saurez entre les mains des chirurgiens compétents
+          </h2>
+          <p class="company_left-content--p mt-4">
+            Confiez son visage ou son corps entre les mains d’un chirurgien esthétique n’est pas quelque chose que vous
+            devez prendre à la légère. En choisissant Chirurgien esthétique paris, vous aurez la garantie d'avoir une
+            intervention sécuritaire et des résultats satisfaisants.
+          </p>
+          <p class="company_left-content--p">
+            Tous nos chirurgiens sont accrédités par le Conseil médical et ont de nombreuses années d'expérience dans
+            leurs domaines respectifs. Ils font aussi preuve d'une transparence totale au niveau des soins esthétiques
+            et les interventions chirurgicales. Afin d'apparaître plus crédibles et professionnels aux yeux des
+            patients, ils vous fourniront des informations précises et détaillées sur le tarif applicable à chaque
+            intervention. Ils ont également de bonnes qualités relationnelles, de bonnes capacités d'accueil et
+            d'écoute. <b>Nos chirurgiens vous donneront des conseils avisés et vous aideront à choisir le traitement qui
+              convient le mieux à vos besoins.</b>
+              <p class="company_left-content--p"><b>Chirurgien esthétique paris vous garantit des résultats satisfaisants et
+              durables. Pour plus de renseignements sur nos services et pour une prise de rendez-vous, veuillez nous
+              contacter au {{site.data.company.phone}} ou remplissez notre formulaire en ligne.</b>
+          </p>
+          <a href="{% link devis.html %}" class="slider_left-content--btn mt-5">Prendre Rendez-vous</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="company_right">
+        <div class="company_left-content">
+          <h2 class="company_left-content--head">
+            Des soins et des chirurgies esthétiques sur mesure
+          </h2>
+          <p class="company_left-content--p mt-4">
+            De nos jours, les clients qui veulent avoir recours à la chirurgie esthétique ont des souhaits de plus en
+            plus précis. Grâce à la technologie et les techniques innovantes, il est possible de leur fournir des
+            traitements et des chirurgies esthétiques personnalisés et sur mesure.
+          </p>
+          <p class="company_left-content--p">
+            Quel que soit votre projet de chirurgie esthétique, chez Chirurgien esthétique Paris, notre objectif est de
+            vous fournir des soins et des traitements selon vos besoins et votre désir. Nous vous proposons donc du
+            sur-mesure !
+          </p>
+          <p class="company_left-content--p">
+            Chirurgien esthétique paris est toujours à l'écoute de ses clients et essaye dans la mesure du possible de
+            leur fournir des résultats le plus conformes aux souhaits exprimés.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
