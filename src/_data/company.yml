@@ -1,0 +1,23 @@
+####################
+# CONFIG
+####################
+name: BHInternet
+phone: 01 64 97 50 43
+
+email: contact@bhgroupe.fr
+
+address: 7 avenue de l'Orme à Martin 91080 Courcouronnes
+
+websiteAddr: bhinternet.fr
+# website id of app.bhinternet.fr
+website: 138
+
+recaptcha:
+  client: 6LfZn4YcAAAAACxjd0fVOGGEqPX9mnpCYK3__zSj
+  server: 6LfZn4YcAAAAAP8-r3SA_GEW8cL-guST9WTI4t4D
+
+lang: fr
+url:
+  #notify: 'https://q8zptub5j7.execute-api.eu-west-2.amazonaws.com/dev/notify' # for dev
+  notify: 'https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify' #prod
+  redirect: '/'

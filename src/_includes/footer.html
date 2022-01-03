@@ -1,0 +1,179 @@
+<section class="timetable">
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10 timetable-section">
+            <div class="container timetable-container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="timetable_box">
+                            <div class="timetable_box-icon"><i class="fas fa-phone-square-alt"></i></div>
+                            <div class="timetable_box-content">
+                                <p class="timetable_box-content--title">Appelez-nous</p>
+                                <span class="timetable_box-content--phone">{{site.data.company.phone}}</span>
+                                <p class="timetable_box-content--p">
+                                    Le cabinet médical de Chirurgien esthétique Paris est dédié exclusivement à la
+                                    chirurgie esthétique et à la médecine esthétique. Afin d'en savoir plus sur nos
+                                    traitements, veuillez nous contacter au {{site.data.company.phone}} pour une prise de rendez-vous
+                                    ou remplissez notre formulaire en ligne
+                                </p>
+                                <a href="{% link devis.html %}" class="timetable_box-content--btn">Formulaire</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="timetable_box">
+                            <div class="timetable_box-icon"><i class="fas fa-clock"></i></div>
+                            <div class="timetable_box-content">
+                                <p class="timetable_box-content--title">
+                                    Horaires d'ouvertures</p>
+                                <ul class="timetable_box-content--ul">
+                                    <li class="timetable_box-content--li">
+                                        Lundi - Vendredi
+                                        <span class="timetable_box-content--span">08:30 - 18:30</span>
+                                    </li>
+                                    <li class="timetable_box-content--li">
+                                        Samedi
+                                        <span class="timetable_box-content--span">09:30 - 17:30</span>
+                                    </li>
+                                    <li class="timetable_box-content--li">
+                                        Dimanche
+                                        <span class="timetable_box-content--span">09:30 - 15:30</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="footer_content">
+                        <div class="footer_content-logo">
+                            <img src="{{site.baseurl}}/assets/img/logo-footer.png"
+                                class="footer_content-logo--img" alt="Footer Logo" />
+                        </div>
+                        <h3 class="footer_content-header--title">
+                            Chirurgie esthétique paris</h3>
+                    <div class="footer_content-icons">
+                        <ul class="footer_content-social">
+                            <li class="footer_content-social--icon">
+                                <i class="fab fa-facebook-f"></i>
+                            </li>
+                            <li class="footer_content-social--icon">
+                                <i class="fab fa-twitter"></i>
+                            </li>
+                            <li class="footer_content-social--icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </li>
+                            <li class="footer_content-social--icon">
+                                <i class="fab fa-github"></i>
+                            </li>
+                            <li class="footer_content-social--icon">
+                                <i class="fas fa-basketball-ball"></i>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <div class="footer_content-header">
+                        <h6 class="footer_content-header--title">A propos</h6>
+                    </div>
+                    <div class="footer_content-icons">
+                        <ul class="footer_content-links">
+                            <li class="footer_content-links--li">
+                                <a href="{% link accueil.html %}" class="footer_content-links--link">Accueil</a>
+                            </li>
+                            <li class="footer_content-links--li">
+                                <a href="{% link quiSommesNous.html %}" class="footer_content-links--link">Notre
+                                    Entreprise</a>
+                            </li>
+                            <li class="footer_content-links--li">
+                                <a href="{% link services.html %}" class="footer_content-links--link">Nos Services</a>
+                            </li>
+                            <li class="footer_content-links--li">
+                                <a href="{% link contact.html %}" class="footer_content-links--link">Contact</a>
+                            </li>
+                            <li class="footer_content-links--li">
+                                <a href="{% link devis.html %}" class="footer_content-links--link">Devis</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="footer_content">
+                    <div class="footer_content-header">
+                        <h6 class="footer_content-header--title">Nous contacter</h6>
+                    </div>
+                    <div class="footer_content-icons">
+                        <ul class="footer_content-links">
+                            <li class="footer_content-links--li d-flex my-3">
+                                <i class="fas fa-map-marker-alt footer_content-links--icon"></i>
+                                <span class="footer_content-links--text">{{site.data.company.address}}</span>
+                            </li>
+                            <li class="footer_content-links--li d-flex my-3">
+                                <i class="fas fa-phone-alt footer_content-links--icon"></i>
+                                <span class="footer_content-links--text">{{site.data.company.phone}}</span>
+                            </li>
+                            <li class="footer_content-links--li d-flex my-4">
+                                <i class="fas fa-envelope footer_content-links--icon"></i>
+                                <span class="footer_content-links--text">{{site.data.company.email}}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col-md-3">
+                <div class="footer_content">
+                    <div class="footer_content-header">
+                        <h6 class="footer_content-header--title">Subscribe Us</h6>
+                    </div>
+                    <p class="footer_content-p">Sign up to our newsletter to get the latest news and offers.</p>
+                    <form id="contactForm" class="footer_content-form mailform off2 header-form" method="post"
+                        action="{{ site.data.company.url.notify }}">
+                        <input type="hidden" name="lang" value="fr">
+                        <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                        <input type="hidden" name="type" value="contact" />
+                        <input type="hidden" name="website" value="{{ site.data.company.website }}" />
+                        <input type="hidden" name="lang" value="{{ site.data.company.lang }}" />
+                        <input type="hidden" name="firstName" value="" />
+                        <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                        <input type="email" name="email" id="email" class="footer_content-form--input"
+                            placeholder="Email" />
+                        <br />
+                        <div id="contact-form-response" style="color: white; margin-bottom: 1rem"></div>
+                        <br />
+                        <button class="footer_content-form--btn">Get Notified</button>
+                    </form>
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="footer_bottom">
+        <div class="container">
+            <div class="footer_bottom-content">
+                <p class="footer_bottom-content--p">© Copyright 2021 BHinternet All Rights Reserved</p>
+                <ul class="footer_bottom-content--ul">
+                    <li class="footer_bottom-content--li">
+                        <a href="#" class="footer_bottom-content--link">Terms & Conditions</a>
+                    </li>
+                    <li class="footer_bottom-content--li">
+                        <a href="#" class="footer_bottom-content--link">FAQ</a>
+                    </li>
+                    <li class="footer_bottom-content--li">
+                        <a href="#" class="footer_bottom-content--link">Privacy Policy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="../assets/js/formSubmit.js"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
