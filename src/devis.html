@@ -1,0 +1,178 @@
+---
+layout: default
+permalink: /devis
+---
+
+<div class="aboutus_content" data-widget="block" data-spacing="lala" data-bg-position="center"
+    data-bg-image="{{site.baseurl}}/assets/img/bg.jpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <h1 class="container aboutus_content-title">Devis / Reservation</h1>
+                <p class="container aboutus_content-desc">Faites appel à un professionnel</p>
+                <ol class="aboutus_content-ol boxshadow">
+                    <li class="aboutus_content-ol--li">
+                        <a href="{% link accueil.html %}" class="aboutus_content-ol--link">Home</a>
+                    </li>
+                    <li class="aboutus_content-ol--li">
+                        <i class="fas fa-chevron-right"></i>
+                    </li>
+                    <li class="aboutus_content-ol--li active">
+                        <a href="#" class="aboutus_content-ol--link active">Devis</a>
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</div>
+<section class="contact">
+    <div class="container">
+        <div class="contact_content">
+            <h3 class="contact_content-head">   
+                Prenez contact avec nous
+            </h3>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="contact_item">
+                    <div class="contact_item-icon"><i class="fas fa-map-marked-alt contact_item-icon--i"></i></div>
+                    <h4 class="contact_item-head">Adresse</h4>
+                    <p class="contact_item-p">{{site.data.company.address}}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact_item">
+                    <div class="contact_item-icon"><i class="fas fa-phone-alt contact_item-icon--i"></i></div>
+                    <h4 class="contact_item-head">Téléphone</h4>
+                    <p class="contact_item-p">{{site.data.company.phone}}</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact_item">
+                    <div class="contact_item-icon"><i class="fas fa-envelope-open contact_item-icon--i"></i></div>
+                    <h4 class="contact_item-head">E-mail</h4>
+                    <p class="contact_item-p">{{site.data.company.email}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact_space">
+    <div class="row contact_space-row">
+        <div class="col-lg-8 contact_space-col">
+            <div class="container">
+                <div class="container contact_space-content">
+                    <h3 class="contact_space-content--head">Contactez-nous</h3>
+                    <p class="contact_space-content--p">Pour toute demande d'information complémentaire ou prise de rendez-vous,<br> veuillez compléter le formulaire de contact ci-dessous : </p>
+                </div>
+                <div class="container contact_space-form">
+                    <form class="form" id="devisForm" method="post" action="{{site.data.company.url.notify}}">
+                        <input type="hidden" name="lang" value="{{ site.data.company.lang }}">
+                        <input type="hidden" name="type" value="devis">
+                        <input type="hidden" name="firstName" value="" />
+                        <input type="hidden" name="website" value="{{ site.data.company.website }}">
+                        <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}">
+                        <input type="hidden" name="redirectUrl" value="{{site.data.company.url.redirect}}" />
+                        <input type="hidden" name="key" value="{{ site.data.company.recaptcha.server }}">
+                        <input type="hidden" name="website" value="{{site.data.company.website}}" />
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control contact_space-form--input" id="name"
+                                                name="name" placeholder="Nom">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="email"
+                                                class="form-control form-control contact_space-form--input" id="email"
+                                                name="email" placeholder="E-mail">
+                                            <small id="emailHelp" class="form-text text-muted contact_space-form--small"
+                                                style="color: #fff !important; font-size: 1rem !important;">Nous ne
+                                                partagerons jamais votre email.</small>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control contact_space-form--input" id="phone"
+                                                name="phone" placeholder="Téléphone">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <select class="form-control contact_space-form--input" id="sujet"
+                                                name="sujet">
+                                                <option disabled selected>Sujet</option>
+                                                <option>Service après-vente</option>
+                                                <option>Devis</option>
+                                                <option>Recrutement</option>
+                                                <option>Autre</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label class="contact_space-content--p">Votre demande est-elle
+                                                urgente?</label>
+                                            <div class="form-check">
+                                                <input class="form-check-input radio" type="radio" name="urgence"
+                                                    id="urgenceOui" value="oui" checked>
+                                                <label class="form-check-label contact_space-content--p ml-3"
+                                                    for="urgenceOui">Oui</label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input radio" type="radio" name="urgence"
+                                                    id="urgenceNon" value="non">
+                                                <label class="form-check-label contact_space-content--p ml-3"
+                                                    for="urgenceNon">Non</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <textarea class="form-control form-control contact_space-form--input"
+                                                id="message" name="message" rows="5" placeholder="Commentaire"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="g-recaptcha" data-sitekey="{{ site.data.company.recaptcha.client }}">
+                                    </div>
+                                    <br />
+                                    <div id="devis-form-response"></div>
+                                </div>
+                                <div class="checkbox" style="margin-right: -7rem !important;">
+                                    <input name="condition" type="checkbox"
+                                        style="height:2rem; width:2rem; vertical-align: middle;" />
+                                    <span class="contact_space-form--label"
+                                        style="color: #fff !important; margin-left: 1rem; font-size: 1.2rem;">
+                                        En utilisant ce formulaire, vous acceptez le stockage et la gestion
+                                        de vos données par ce site *</span>
+                                    <i class="fa fa-info-square" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="form-control contact_space-form--btn form-submit"
+                            value="Submit">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 contact_space-col2">
+            <div class="contact_space-map">
+                <iframe class="map-view map" width="75%" height="500" frameborder="0" scrolling="no" marginheight="0"
+                    marginwidth="0"
+                    src="https://maps.google.com/maps?width=75%25&amp;height=500&amp;hl=en&amp;q=%20BH%20Internet,%207%20Avenue%20de%20l'Orme%20%C3%80%20Martin,%2091080%20%C3%89vry-Courcouronnes,%20France+(BH%20Internet)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+                </iframe>
+            </div>
+        </div>
+    </div>
+</section>
