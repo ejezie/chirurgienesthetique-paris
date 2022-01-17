@@ -6,6 +6,7 @@ description: Située au coeur de Paris, Chirurgien esthétique Paris vous propos
 ---
 
 <!-- Featured Page-->
+<div id="home-wrap">
 <section class="featured">
   <div class="container">
     <div class="row featured_row">
@@ -22,6 +23,7 @@ description: Située au coeur de Paris, Chirurgien esthétique Paris vous propos
                 </h2>
               </div>
             </div>
+            
             <div class="find_property-sub">
               <form class="form" id="devisForm" method="post" action="{{site.data.company.url.notify}}">
                 <input type="hidden" name="lang" value="{{ site.data.company.lang }}">
@@ -71,7 +73,7 @@ description: Située au coeur de Paris, Chirurgien esthétique Paris vous propos
                   <input type="date" class="form-control dropdown-lg inputdate" id="date" name="date"
                     placeholder="Date" />
                   <input type="time" class="form-control dropdown-lg inputtime" id="time" name="time"
-                    placeholder="temps" />
+                    placeholder="Heures" />
                   <br />
                   <div id="devis-form-response" style="color: rgb(44, 42, 42); margin-bottom: 1rem"></div>
                   <br />
@@ -434,19 +436,19 @@ description: Située au coeur de Paris, Chirurgien esthétique Paris vous propos
   </div>
 </section>
 <section class="space">
-  <div class="">
-    <div class="row">
-      <div class="col-md-5">
-        <div class="space_image">
-          <img src="{{site.baseurl}}/assets/img/space/1.jpg" class="space_image-img" alt="Space" />
+  <!-- <div class="col-md-6"> -->
+    <div class="content-wrap">
+      <div class="img-wrap">
+        <div class="image">
+          <img src="{{site.baseurl}}/assets/img/space/1.jpg" class="img" alt="Space" />
         </div>
       </div>
-      <div class="col-md-7">
-        <div class="space_content">
-          <h2 class="space_content-head">
+      <div class="text-wrap">
+        <div class="content">
+          <h2 class="head">
             Chirurgien esthétique paris propose des services à la pointe des avancées de la médecine.
           </h2>
-          <p class="space_content-p mt-4">
+          <p class="prg">
             Notre clinique couvre une superficie de 900 mètres carrés et propose des prestations haut de gamme telles
             que la médecine esthétique, la greffe de cheveux, la chirurgie faciale et corporelle, les soins dentaires,
             pour n'en citer que quelques-uns. Chirurgien esthétique paris possède tous les moyens techniques et humains
@@ -458,7 +460,7 @@ description: Située au coeur de Paris, Chirurgien esthétique Paris vous propos
         </div>
       </div>
     </div>
-  </div>
+  <!-- </div> -->
 </section>
 <section class="team">
   <div class="container">
@@ -574,3 +576,4 @@ description: Située au coeur de Paris, Chirurgien esthétique Paris vous propos
     </div>
   </div>
 </section>
+</div>
