@@ -251,7 +251,7 @@ body {
 
 .featured {
   background-color: transparent;
-  margin-top: -7rem !important;
+  margin-top: -5rem !important;
   z-index: 1000 !important;
   margin-left: -20rem !important;
   overflow-x: hidden !important;
@@ -1052,63 +1052,68 @@ body {
 
 .space {
   // background-image: url("{{site.baseurl}}/assets/img/space/bg.png");
-  padding-top: 10rem;
+  padding: 2rem 0;
   background-color: var(--color-primary) !important;
   position: relative;
   width: 100vw;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0px;
-  //   width: 28%;
-  //   height: 100%;
-  //   background-position: center center;
-  //   left: 0px;
-  //   background-color: #ffffff;
-  //   width: 19.4%;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    width: 28%;
+    height: 100%;
+    background-position: center center;
+    left: 0px;
+    background-color: #ffffff;
+    width: 19.4%;
 
-  //   @media only screen and (max-width: 1200px) {
-  //     position: relative;
-  //     width: 100%;
-  //     background: var(--color-primary);
-  //   }
-  // }
-
-  &_image {
-    &-img {
-      width: 100vw;
+    @media only screen and (max-width: 1200px) {
+      position: relative;
+      width: 100%;
+      background: var(--color-primary);
+    }
+  }
+.content-wrap{
+  display: flex;
+  @media (max-width: 960px){
+    flex-direction: column;
+  }
+  .image {
+    .img {
+      width: 48vw;
       object-fit: cover;
-
+      margin: 0 1rem;
+      @media (max-width: 960px){
+        width: 90vw;
+      }
+      @media (max-width: 400px){
+        width: 95vw;
+      }
     }
   }
 
-  &_content {
-    width: 70% !important;
-
-    @media only screen and (max-width: 1200px) {
-      width: 100% !important;
-      text-align: center;
-      margin-top: 2rem;
-    }
-
-    &-head {
-      font-family: "Fira Sans", sans-serif;
-      font-weight: 500;
-      margin-top: 0px;
-      margin-bottom: 2.5rem;
-      color: #fff;
-      font-size: 3.5rem;
-    }
-
-    &-p {
-      font-family: "Fira Sans", sans-serif;
-      font-style: normal;
-      font-size: 2rem;
-      font-weight: 300;
-      color: #fff !important;
-      margin-top: 0;
-      margin-bottom: 1rem;
+  .text-wrap{
+    .content {
+      padding: 1rem;
+      .head {
+        font-family: "Fira Sans", sans-serif;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 2.5rem;
+        color: #fff;
+        font-size: 3.5rem;
+      }
+  
+      .prg {
+        font-family: "Fira Sans", sans-serif;
+        font-style: normal;
+        font-size: 1.3rem;
+        font-weight: 300;
+        color: #fff !important;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
     }
   }
 
@@ -1160,6 +1165,8 @@ body {
       }
     }
   }
+}
+  
 }
 
 .team {
