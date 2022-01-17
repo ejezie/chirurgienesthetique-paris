@@ -32,14 +32,15 @@ body {
   overflow-x: hidden !important;
 }
 
-.Navbar {
-  background: #ffffff !important;
-  z-index: 10000 !important;
-  max-width: 100%;
-  width: 100%;
-  transition: 1s all ease-in-out;
-  overflow-x: hidden !important;
+#home-wrap{
+  overflow-x: hidden;
+}
 
+.Navbar {
+  background: #fff !important;
+  z-index: 10000 !important;
+  width: 100vw;
+  transition: 1s all ease-in-out;
   &_image {
     &-img {
       width: 10rem;
@@ -64,12 +65,10 @@ body {
       width: 10rem !important;
       max-width: 100%;
       position: relative;
-
       &:hover {
         cursor: pointer;
       }
     }
-
     &-p {
       font-family: "Fira Sans", sans-serif;
       position: absolute;
@@ -156,8 +155,7 @@ body {
   border: 1px solid #e8f5f9;
   z-index: 1000 !important;
   background-color: #fff;
-  width: 100%;
-  max-width: 100%;
+  display: none;
   top: 0;
   left: 0;
   z-index: 10000 !important;
@@ -616,7 +614,7 @@ body {
 .about {
   position: relative;
   display: inline-block;
-  padding-top: 15rem;
+  padding-top: 5rem;
   width: 100%;
   max-width: 100%;
 
@@ -1053,36 +1051,35 @@ body {
 }
 
 .space {
-  background-image: url("{{site.baseurl}}/assets/img/space/bg.png");
+  // background-image: url("{{site.baseurl}}/assets/img/space/bg.png");
   padding-top: 10rem;
   background-color: var(--color-primary) !important;
   position: relative;
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0px;
-    width: 28%;
-    height: 100%;
-    background-position: center center;
-    left: 0px;
-    background-color: #ffffff;
-    width: 19.4%;
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0px;
+  //   width: 28%;
+  //   height: 100%;
+  //   background-position: center center;
+  //   left: 0px;
+  //   background-color: #ffffff;
+  //   width: 19.4%;
 
-    @media only screen and (max-width: 1200px) {
-      position: relative;
-      width: 100%;
-      max-width: 100%;
-      background: var(--color-primary);
-    }
-  }
+  //   @media only screen and (max-width: 1200px) {
+  //     position: relative;
+  //     width: 100%;
+  //     background: var(--color-primary);
+  //   }
+  // }
 
   &_image {
     &-img {
-      width: 100%;
-      max-width: 100%;
+      width: 100vw;
+      object-fit: cover;
+
     }
   }
 
@@ -1091,7 +1088,6 @@ body {
 
     @media only screen and (max-width: 1200px) {
       width: 100% !important;
-      max-width: 100% !important;
       text-align: center;
       margin-top: 2rem;
     }
@@ -1102,7 +1098,7 @@ body {
       margin-top: 0px;
       margin-bottom: 2.5rem;
       color: #fff;
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
 
     &-p {
@@ -1270,7 +1266,7 @@ body {
       font-family: "Fira Sans", sans-serif;
       font-weight: normal;
       font-style: normal;
-      padding: 8rem;
+      padding: 2rem;
       margin-bottom: 4rem;
       z-index: 10;
 
@@ -1537,7 +1533,8 @@ body {
   z-index: 1000;
   width: 95vw;
   @media (max-width: 960px) {
-    width: 0vw;
+    width: 90vw;
+    margin-left: 1rem;
   }
 
   &-section {
@@ -2528,7 +2525,18 @@ body {
 }
 
 .slick-list {
-  margin-bottom: 4rem !important;
+  margin-bottom: 2rem !important;
+  width: 95vw !important;
+}
+.slick-track {
+  overflow: hidden !important;
+  width: 97vw;
+}
+.slick-next {
+  display: none !important;
+}
+.slick-previous {
+  display: none !important;
 }
 
 .slick-dots li.slick-active button:before {
